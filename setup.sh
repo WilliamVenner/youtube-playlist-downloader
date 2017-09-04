@@ -2,15 +2,16 @@
 
 clear
 
-echo Making directories...
+echo Making files & directories...
 
 mkdir "dl"
 mkdir "dl/user"
 mkdir "dl/albumart"
+echo "{}" >> spotify.json
 
 read -p "YouTube API Key (console.developers.google.com): " apikey
 
-$apikey > youtube-api-key.txt
+$apikey >> youtube-api-key.txt
 
 chmod 777 youtube-api-key.txt
 

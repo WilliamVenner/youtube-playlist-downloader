@@ -1,6 +1,6 @@
 @echo off
 
-echo Making directories...
+echo Making files ^& directories...
 
 mkdir "dl"
 mkdir "dl/user"
@@ -9,6 +9,7 @@ mkdir "dl/albumart"
 set /p key="YouTube API Key (console.developers.google.com): "
 
 echo %key% > youtube-api-key.txt
+echo {} > spotify.json
 
 echo Installing modules...
 
