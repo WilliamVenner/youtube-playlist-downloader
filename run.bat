@@ -1,4 +1,4 @@
 @echo off
 set /p id="Enter YouTube playlist ID: "
-node yt-playlist-downloader.js %id%
+node youtube-playlist-downloader.js %id%
 PAUSE
