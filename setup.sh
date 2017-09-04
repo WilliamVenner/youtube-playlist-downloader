@@ -9,6 +9,8 @@ mkdir "dl/user"
 mkdir "dl/albumart"
 echo "{}" >> spotify.json
 
+chmod 777 node_modules -R
+
 read -p "YouTube API Key (console.developers.google.com): " apikey
 
 $apikey >> youtube-api-key.txt

@@ -303,7 +303,7 @@ function print_table(items,msg,cmd) {
 					return false;
 				}
 				console.log("Downloading video #" + (index + 1));
-				youtube_dl.exec("https://youtube.com/watch?v=" + vids[index].vid.resourceId.videoId, ["-x", "--audio-format", "mp3"], {cwd: dir}, function(err, output) {
+				youtube_dl.exec("https://youtube.com/watch?v=" + vids[index].vid.resourceId.videoId, ["-x", "--hls-prefer-ffmpeg", "--prefer-ffmpeg", "--audio-format", "mp3"], {cwd: dir}, function(err, output) {
 					if (err) {
 						console.log("ERROR: " + err);
 						return;
