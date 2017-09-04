@@ -21,6 +21,10 @@ echo Installing modules...
 
 npm i youtube-playlist-info youtube-dl youtube-info readline node-id3 request merge path fs-extra
 
+rm avprobe.exe
+rm ffmpeg.exe
+rm ffprobe.exe
+
 chmod +x run.sh
 
 exit
